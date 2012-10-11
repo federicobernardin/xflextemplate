@@ -1,0 +1,30 @@
+(add new changes on top of this file)
+-------------------------------------------Release 2.0.15--------------------------
+2011-10-11 15:25:23 CEST  federico@bernardin.it    added feature on wizard list: all single template are available also for templavoila
+2011-10-11 15:20:17 CEST  federico@bernardin.it    refactor of basic extension template, now is automatically loaded
+2011-07-27 15:05:02 CEST  federico@bernardin.it    fix bug: not reload on template selection
+
+-------------------------------------------Release 2.0.14--------------------------
+2011-06-06 16:08:11 CEST  federico@bernardin.it    fix problem with label of single element
+
+-------------------------------------------Release 2.0.13--------------------------
+2011-04-22 16:32:50 CEST  federico@bernardin.it    fix problem with multicolumn
+2011-04-22 14:57:25 CEST  federico@bernardin.it    adds link wizard on input box
+2011-04-21 17:41:15 CEST  federico@bernardin.it    resolve problem in multiple copy
+
+-------------------------------------------Release 2.0.9--------------------------
+2009-12-04 Federico Bernardin  <federico@bernardin.it>
+Fixing wrong file field in query (class.xftObject.php)
+Fixing error on type of protocol in javascript including
+Fixing problem on subelement deletion
+Fixing compatibility with php 5.3 (remove ereg_replace and use preg_replace)
+
+-------------------------------------------Release 2.0.8--------------------------
+2009-08-26 Federico Bernardin  <federico@bernardin.it>
+Add start and stop field in Backend
+Add new feature in extension configuration
+Add Export and import feature
+
+
+-------------------------------------------Release 2.0.0--------------------------
+2009-04-22 Federico Bernardin  <federico@bernardin.it>

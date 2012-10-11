@@ -1,0 +1,549 @@
+<!-- ###TEMPLATELIST### -->
+###ERRORIMPORTDESCRIPTION###
+<table class="xftTableList typo3-dblist"  border="0" cellpadding="2" cellspacing="1">
+    <tr  class="t3-row-header">
+      <td>###TITLEHEADER###</td>
+      <td>###DESCRIPTIONHEADER###</td>
+      <td>###CRDATEHEADER###</td>
+      <td>###TSTAMPHEADER###</td>
+      <td>###ICONSHEADER###</td>
+    </tr>
+    <!-- ###TEMPLATELISTCOLUMN### -->
+      <tr  class="db_list_normal firstcol" id="xftRow###UIDROWID###">
+        <td class="bgColor">###TITLECOLUMN###</td>
+        <td>###DESCRIPTIONCOLUMN###</td>
+        <td>###CRDATECOLUMN###</td>
+        <td>###TSTAMPCOLUMN###</td>
+        <td>###ICONSCOLUMN###</td>
+      </tr>
+    <!-- ###TEMPLATELISTCOLUMN### -->
+</table>
+<div id="dialogContainer">
+        <div id="dialog" title="###DELETEELEMENTTITLE###">
+          <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><div class="dialogContent">###DELETEELEMENTMESSAGE###</div></p>
+        </div>
+        <div id="dialogError" title="' . $this->language->getLL('dialogErrorTitle') . '">
+          <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><div class="dialogContent"></div></p>
+        </div>
+      </div>
+      <span class="clear">&nbsp;</span>
+<!-- ###TEMPLATELIST### -->
+<!-- ###TEMPLATEIMPORT### -->
+
+  <table class="typo3-dblist" border="0" cellpadding="0" cellspacing="0">
+    <tr  class="t3-row-header">
+        <td colspan = "2"><span class="xft-closeicon">###CLOSEICONS###</span><div>###IMPORTTEMPLATETITLE###</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>###IMPORTTEMPLATEMESSAGE###</strong></td>
+    </tr>
+    <tr>
+            <td class="xftHelpColumn">###HELPICON###</td>
+            <td class="xftStandardColumn">
+                <label for="template">###IMPORTTEMPLATEFILELABEL###</label>
+                <input type="file" name="template" />
+            </td>
+
+       </tr>
+       <tr>
+            <td class="xftHelpColumn">&nbsp;</td>
+            <td class="xftStandardColumn">
+                <input type="submit" value="###IMPORTTEMPLATESUBMIT###" />
+            </td>
+        </tr>
+        </table>
+  <input type="hidden" name="action" value="importExecuted" />
+<!-- ###TEMPLATEIMPORT### -->
+
+<!-- ###TABS### -->
+<div id="extjstab"></div>
+         <div id="xft-mainblock">
+            <ul>
+                <li><a href="#general"><span>###GENERALTITLE###</span></a></li>
+                <li><a href="#description"><span>###DESCRIPTIONTITLE###</span></a></li>
+                <li><a href="#element"><span>###ELEMENTTITLE###</span></a></li>
+                <li><a href="#typoscript"><span>###TYPOSCRIPTTITLE###</span></a></li>
+                <li><a href="#html"><span>###HTMLTITLE###</span></a></li>
+            </ul>
+            <div class="fullBordered" id="general">
+              <div class="xft-TabHeader"><span class="xft-icon">###GENERALICONS###</span><span class="xft-closeicon">###CLOSEICONS###</span><span class="xft-tabs-header">###XFTTITLE###</span></div>
+                ###GENERALBODY###
+            </div>
+            <div class="fullBordered" id="description">
+              <div class="xft-TabHeader"><span class="xft-icon">###GENERALICONS###</span><span class="xft-closeicon">###CLOSEICONS###</span><span class="xft-tabs-header">###XFTDESCRIPTIONTITLE###</span></div>
+                ###DESCRIPTIONBODY###
+      </div>
+            <div class="fullBordered" id="element">
+              <div class="xft-TabHeader"><span class="xft-icon">###ELEMENTICONS###</span><span class="xft-closeicon">###CLOSEICONS###</span><span class="xft-tabs-header">###XFTELEMENTTITLE###</span></div>
+                ###ELEMENTBODY###
+            </div>
+            <div class="fullBordered" id="typoscript">
+              <div class="xft-TabHeader"><span class="xft-icon">###GENERALICONS###</span><span class="xft-closeicon">###CLOSEICONS###</span><span class="xft-tabs-header">###XFTTYPOSCRIPTTITLE###</span></div>
+                <div class="xftTyposcriptEditorContainer">
+                   ###TYPOSCRIPTBODY###
+        </div>
+            </div>
+            <div class="fullBordered" id="html">
+              <div class="xft-TabHeader"><span class="xft-icon">###GENERALICONS###</span><span class="xft-closeicon">###CLOSEICONS###</span><span class="xft-tabs-header">###XFTHTMLTITLE###</span></div>
+                <div class="xftHTMLEditorContainer">
+                   ###HTMLBODY###
+        </div>
+            </div>
+
+        </div>
+<!-- ###TABS### -->
+<!-- ###MAIN_ELEMENT### -->
+<div id="element_###ID###" class="portlet">
+    <div class="portlet-header"><span class="ui-icon-delete">###DELETEICON###</span><span class="title">###TITLEVALUE###</span></div>
+    <div class="portlet-content">
+    <table>
+        <tr>
+            <td class="xftHelpColumn">###HELPICON20###</td>
+            <td class="xftStandardColumn">
+                <label for="xflextemplate_###ID###_title">###TITLELABEL###</label>
+                <input id="xflextemplate_###ID###_title" class="xftTitle" type="text" name="xflextemplate[###ID###][title]" value="###TITLEVALUE###" />
+            </td>
+            <td class="xftHelpColumn">###HELPICON21###</td>
+            <td class="xftStandardColumn">
+                <label for="xflextemplate_###ID###_type">###TYPELABEL###</label>
+                <select id="xflextemplate_###ID###_type" class="typeHandler" name="xflextemplate[###ID###][type]" >###TYPESELECT###</select>
+            </td>
+        </tr>
+        <tr>
+            <td class="xftHelpColumn">###HELPICON22###</td>
+            <td class="xftStandardColumn">
+                <label for="xflextemplate_###ID###_palette">###PALETTELABEL###</label>
+                <select id="xflextemplate_###ID###_palette" class="xft-palette" name="xflextemplate[###ID###][palette]" >###PALETTESELECT###</select>
+            </td>
+            <td class="xftHelpColumn">###HELPICON23###</td>
+            <td class="xftStandardColumn">
+                <label for="xflextemplate_###ID###_xtype">###XTYPELABEL###</label>
+                <select id="xflextemplate_###ID###_xtype" name="xflextemplate[###ID###][xtype]" >###XTYPESELECT###</select>
+            </td>
+        </tr>
+        </table>
+        <hr class="xftRowDivider" />
+      <div class="subelement" id="subelement_###ID###">###SUBELEMENT###</div>
+    </div>
+</div>
+<!-- ###MAIN_ELEMENT### -->
+
+<!--###INPUTTYPE_SUBELEMENT### -->
+<table width="100%" class="subElementTable">
+<tr>
+        <td class="xftHelpColumn">###HELPICON43###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_input_link">###LINK_LABEL###:</label>
+<input id="xflextemplate_###ID###_input_link" type="checkbox" name="xflextemplate[###ID###][input_link]" class="xft-input-text" ###LINKCHECKED### value="1" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+    <tr>
+        <td class="xftHelpColumn">###HELPICON30###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_max">###MAX_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_max" type="text" name="xflextemplate[###ID###][input_max]" class="xft-input-text" value="###MAXVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON31###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_size">###SIZE_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_size" type="text" name="xflextemplate[###ID###][input_size]" class="xft-input-text" value="###SIZEVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON32###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_default">###DEFAULT_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_default" type="text" name="xflextemplate[###ID###][input_default]" class="xft-input-text" value="###DEFAULTVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON33###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_is_in">###IS_IN_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_is_in" type="text" name="xflextemplate[###ID###][input_is_in]" class="xft-input-text" value="###IS_INVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON34###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_eval">###EVAL_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_eval" type="text" name="xflextemplate[###ID###][input_eval]" class="xft-input-text" value="###EVALVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON35###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_checkbox">###CHECKBOX_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_checkbox" type="text" name="xflextemplate[###ID###][input_checkbox]" class="xft-input-text" value="###CHECKBOXVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON36###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_maxval">###MAXVAL_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_maxval" type="text" name="xflextemplate[###ID###][input_maxval]" class="xft-input-text" value="###MAXVALVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON37###</td>
+        <td class="xftStandardColumn">
+            <label for="xflextemplate_###ID###_input_minval">###MINVAL_LABEL###:</label>
+            <input id="xflextemplate_###ID###_input_minval" type="text" name="xflextemplate[###ID###][input_minval]" class="xft-input-text" value="###MINVALVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+</table>
+<!--###INPUTTYPE_SUBELEMENT### -->
+
+<!--###TEXTTYPE_SUBELEMENT### -->
+<table width="100%" class="subElementTable">
+<tr>
+        <td class="xftHelpColumn">###HELPICON40###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_text_cols">###COLS_LABEL###:</label>
+<input id="xflextemplate_###ID###_text_cols" type="text" name="xflextemplate[###ID###][text_cols]" class="xft-input-text" value="###COLSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON41###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_text_rows">###ROWS_LABEL###:</label>
+<input id="xflextemplate_###ID###_text_rows" type="text" name="xflextemplate[###ID###][text_rows]" class="xft-input-text" value="###ROWSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON42###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_text_default">###DEFAULT_LABEL###:</label>
+<input id="xflextemplate_###ID###_text_default" type="text" name="xflextemplate[###ID###][text_default]" class="xft-input-text" value="###DEFAULTVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON43###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_text_wrap">###WRAP_LABEL###:</label>
+<input id="xflextemplate_###ID###_text_wrap" type="checkbox" name="xflextemplate[###ID###][text_wrap]" class="xft-input-text" ###WRAPCHECKED### value="1" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON44###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_text_defaultExtras">###DEFAULTEXTRAS_LABEL###:</label>
+<textarea id="xflextemplate_###ID###_text_defaultExtras" name="xflextemplate[###ID###][text_defaultExtras]" class="xft-input-text">###DEFAULTEXTRASVALUE###</textarea>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+</table>
+
+
+
+<!--###TEXTTYPE_SUBELEMENT### -->
+
+
+<!--###GROUPTYPE_SUBELEMENT### -->
+<table width="100%" class="subElementTable">
+<tr>
+        <td class="xftHelpColumn">###HELPICON70###</td>
+        <td class="xftStandardColumn">
+        <label for="xflextemplate_###ID###_group_internal_type">###INTERNAL_TYPE_LABEL###:</label>
+<select id="xflextemplate_###ID###_group_internal_type" name="xflextemplate[###ID###][group_internal_type]" class="xft-group-text">
+  <option value="file" ###FILESELECTED###>file</option>
+  <option value="db" ###DATABASESELECTED###>database</option>
+</select>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON71###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_allowed">###ALLOWED_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_allowed" type="text" name="xflextemplate[###ID###][group_allowed]" class="xft-group-text" value="###ALLOWEDVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON72###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_disallowed">###DISALLOWED_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_disallowed" type="text" name="xflextemplate[###ID###][group_disallowed]" class="xft-group-text" value="###DISALLOWEDVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON73###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_MM">###MM_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_MM" type="text" name="xflextemplate[###ID###][group_MM]" class="xft-group-text" value="###MMVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON74###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_max_size">###MAX_SIZE_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_max_size" type="text" name="xflextemplate[###ID###][group_max_size]" class="xft-group-text" value="###MAX_SIZEVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON75###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_show_thumbs">###SHOW_THUMBS_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_show_thumbs" type="checkbox" name="xflextemplate[###ID###][group_show_thumbs]" class="xft-group-checkbox" ###SHOW_THUMBSCHECKED### value="1" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON76###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_maxitems">###MAXITEMS_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_maxitems" type="text" name="xflextemplate[###ID###][group_maxitems]" class="xft-group-text" value="###MAXITEMSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON77###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_minitems">###MINITEMS_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_minitems" type="text" name="xflextemplate[###ID###][group_minitems]" class="xft-group-text" value="###MINITEMSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON78###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_size">###SIZE_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_size" type="text" name="xflextemplate[###ID###][group_size]" class="xft-group-text" value="###SIZEVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON79###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_autoSizeMax">###AUTOSIZEMAX_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_autoSizeMax" type="text" name="xflextemplate[###ID###][group_autoSizeMax]" class="xft-group-text" value="###AUTOSIZEMAXVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON80###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_group_multiple">###MULTIPLE_LABEL###:</label>
+<input id="xflextemplate_###ID###_group_multiple" type="text" name="xflextemplate[###ID###][group_multiple]" class="xft-group-text" value="###MULTIPLEVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON81###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_disable_controls">###DISABLE_CONTROLS_LABEL###:</label>
+<input id="xflextemplate_###ID###_disable_controls" type="text" name="xflextemplate[###ID###][group_disable_controls]" class="xft-group-text" value="###DISABLE_CONTROLSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+</table>
+<!--###GROUPTYPE_SUBELEMENT### -->
+
+
+<!--###CHECKTYPE_SUBELEMENT### -->
+<table width="100%" class="subElementTable">
+<tr>
+        <td class="xftHelpColumn">###HELPICON50###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_check_items">###ITEMS_LABEL###:</label>
+<textarea id="xflextemplate_###ID###_check_items" type="text" name="xflextemplate[###ID###][check_items]" class="xft-input-check" >###ITEMSVALUE###</textarea>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON51###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_check_cols">###COLS_LABEL###:</label>
+<input id="xflextemplate_###ID###_check_cols" type="text" name="xflextemplate[###ID###][check_cols]" class="xft-input-check" value="###COLSVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON52###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_check_default">###DEFAULT_LABEL###:</label>
+<input id="xflextemplate_###ID###_check_default" type="text" name="xflextemplate[###ID###][check_default]" class="xft-input-check" value="###DEFAULTVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON53###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_check_itemprocfunc">###ITEMPROCFUNC_LABEL###:</label>
+<textarea id="xflextemplate_###ID###_check_itemprocfunc" name="xflextemplate[###ID###][check_itemprocfunc]" class="xft-textarea-check" >###ITEMPROCFUNCVALUE###</textarea>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+</table>
+<!--###CHECKTYPE_SUBELEMENT### -->
+
+<!--###RADIOTYPE_SUBELEMENT### -->
+<table width="100%" class="subElementTable">
+<tr>
+        <td class="xftHelpColumn">###HELPICON60###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_radio_items">###ITEMS_LABEL###:</label>
+<textarea id="xflextemplate_###ID###_radio_items" type="text" name="xflextemplate[###ID###][radio_items]" class="xft-input-check" >###ITEMSVALUE###</textarea>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON61###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_radio_default">###DEFAULT_LABEL###:</label>
+<input id="xflextemplate_###ID###_radio_default" type="text" name="xflextemplate[###ID###][radio_default]" class="xft-input-check" value="###DEFAULTVALUE###" />
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+<tr>
+    <td colspan="3"><hr class="xftRowDivider" /></td>
+</tr>
+<tr>
+        <td class="xftHelpColumn">###HELPICON62###</td>
+        <td class="xftStandardColumn">
+<label for="xflextemplate_###ID###_radio_itemprocfunc">###ITEMPROCFUNC_LABEL###:</label>
+<textarea id="xflextemplate_###ID###_radio_itemprocfunc" name="xflextemplate[###ID###][radio_itemprocfunc]" class="xft-textarea-check" >###ITEMPROCFUNCVALUE###</textarea>
+        </td>
+        <td class="xftEmptyColumn" width="100%">&nbsp;</td>
+</tr>
+</table>
+<!--###RADIOTYPE_SUBELEMENT### -->
+
+
+<!--###LANGUAGE_HELPER_BLOCK### -->
+<div class="tsHelperContainer">
+  <span class="tsHelperRow"><label for="helperLanguage">###LANGUAGESELECTLABEL###</label> ###LANGUAGESELECT###</span>
+  <span class="tsHelperRow"><label for="tsHelperElementList">###ELEMENTSELECTLABEL###</label> ###ELEMENTSELECT###</span>
+  <span class="tsHelperRow"><label for="languageTranslation">###INPUTTYPELABEL###</label> ###INPUTTYPE###</span>
+  <span class="tsHelperRow">###INSERTBUTTON###</span>
+</div>
+<!--###LANGUAGE_HELPER_BLOCK### -->
+<!--###TEMPLATE_HELPER_BLOCK### -->
+<div class="tsHelperContainer">
+  <span class="tsHelperRow"><label for="helperTypeTemplate">###TYPESELECTLABEL###</label> ###TYPESELECT###</span>
+  <div class="tsHelperSubBlock">
+    <span class="tsHelperRow"><label for="templateFile">###INPUTTYPELABEL###</label> ###INPUTTYPE###</span>
+    <span class="tsHelperRow">###INSERTBUTTON###</span>
+  </div>
+</div>
+<!--###TEMPLATE_HELPER_BLOCK### -->
+<!--###TEMPLATE_HELPER_SUBBLOCK### -->
+  <span class="tsHelperRow"><label for="templateFile">###INPUTTYPELABEL###</label> ###INPUTTYPE###</span>
+  <span class="tsHelperRow">###INSERTBUTTON###</span>
+<!--###TEMPLATE_HELPER_SUBBLOCK### -->
+<!--###MAINTEMPLATE_HELPER_BLOCK### -->
+<div id="helperArea">
+  <div style="background:url(../images/prompt_header.gif) repeat-x;  border:1px solid #4f6d81; border-bottom:none;display:block; position:relative;  padding:3px 6px 7px; height:14px; font-size:14px; font-weight:bold;">
+    <div style="float:left; color:#355468;">Typoscript Helper</div>
+    <div id="helperWindowCloseButton" style="float:right; cursor:pointer; margin:3px 3px 0 0; height:11px; width:11px; background:url(../images/dialog_close.gif) no-repeat">
+    </div>
+  </div>
+  <div class="helperContainerBlock" style="display:block; height:160px; padding:6px; color:#666666; font-size:13px;background:#fff url(../images/prompt_bg.jpg) bottom right no-repeat;  border:1px solid #4f6d81; border-top:none;position:relative">
+    <select id="mainHelperFunction">
+      <option value="none">###TSHELPERNONELABEL###</option>
+      <option value="language">###TSHELPERLANGUAGELABEL###</option>
+      <option value="template">###TSHELPERTEMPLATELABEL###</option>
+    </select>
+  </div>
+</div>
+<!--###MAINTEMPLATE_HELPER_BLOCK### -->

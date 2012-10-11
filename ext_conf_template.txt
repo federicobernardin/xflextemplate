@@ -1,0 +1,31 @@
+  # cat=basic/enable; type=boolean; label=Check template group access: if not set, no control on  acces group to xflextemplate object
+emptyGroupnoControl = 0
+
+  # cat=basic/enable; type=boolean; label=First in content list: If set xflextemplate content type is the default one
+xflextemplateIsStandardContentElement = 0
+
+  # cat=basic/enable; type=boolean; label=Wizard: If set xflextemplate content type is shown in wizard (also in templavoila)
+xflextemplateIsShownInWizard = 0
+
+  # cat=basic/enable; type=boolean; label=Debug: If set xflextemplate show debug information
+debug = 0
+
+  # cat=basic; type=int [10-300]; label=Number of Columns of TextArea: This field specify the number of column of text area in the template edit form
+textareaCols = 50
+
+  # cat=basic; type=int [10-300]; label=Number of Rows of TextArea: This field specify the number of rows of text area in the template edit form
+textareaRows = 20
+
+  # cat=basic; type=string; label=Upload folder: Upload folder for saving images and other files
+uploadFolder = uploads/pics
+
+  # cat=basic; type=string; label=Date configuration string
+date = m-d-Y
+
+  # cat=basic; type=string; label=RTE Transformation: Standard string for textarea when defaultExtra is empty. Used to define RTE transformation for textarea with RTE in xflextemplate fields
+defaultExtra = richtext[]:rte_transform[flag=rte_enabled|mode=ts]
+
+  # cat=basic; type=int [3-1000]; label=List objects: max number of object in Group List (if you don't know, avoid to modify)
+autoSizeMax = 40
+
+

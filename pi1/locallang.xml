@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Frontend labels for xflextemplate</description>
+		<type>module</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="emptyTemplate">Template is not found or it\'s empty, control your xft template for HTML tabs or typoscript.</label>
+			<label index="noStaticTyposcriptLoaded">Nessun template statico è  stato caricato! Go to typoscript of your page and add xflextemplate to static template.</label>
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="emptyTemplate">Non è stato trovato alcun template oppure è vuoto, controllate nel vostro xft template le schede HTML o typoscript.</label>
+			<label index="noStaticTyposcriptLoaded">Nessun template statico è  stato caricato! Andate nel typoscript della pagina ed aggiungete xflextemplate ai template statici.</label>
+		</languageKey>
+	</data>
+</T3locallang>

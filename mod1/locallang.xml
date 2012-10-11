@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>pippo</description>
+        <type></type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="title">XFT: eXtensibleFlexibleTemplate - Dynamic content element generator</label>
+            <label index="titlelist">Title</label>
+            <label index="descriptionlist">Description</label>
+            <label index="filelist">File HTML</label>
+            <label index="datelist">Updated</label>
+            <label index="templatetitle">Title:</label>
+            <label index="templatefile">File:</label>
+            <label index="typoscript">Typoscript:</label>
+            <label index="description">Description:</label>
+            <label index="palettes">Palettes:</label>
+            <label index="Permissions">Permissions:</label>
+            <label index="groupChoosen">Selected groups:</label>
+            <label index="groupList">Groups:</label>
+            <label index="deleteButtonList">Delete selected group</label>
+            <label index="eltitle">Name:</label>
+            <label index="deletemessage">Are you sure to delete this template?</label>
+            <label index="namemissing">Miss any name fields</label>
+            <label index="filemissing">Miss file field</label>
+            <label index="titlemissing">Miss title field</label>
+            <label index="nameduplication">Some names are duplicate</label>
+            <label index="duplicatename">This name is duplicate</label>
+            <label index="paletteserror">You have a palette error,&lt;br /&gt;you have choose a field that is a part of another palette</label>
+            <label index="singlepaletteerror">This field was chosen by one or more fields to be a palette</label>
+            <label index="singlenamemissing">This field is compulsory, please fill it!</label>
+            <label index="singletitlemissing">This field is compulsory, please fill it!</label>
+            <label index="singlefilemissing">This field is compulsory, please fill it!</label>
+            <label index="erroradvisor">Found some errors, you have to correct errors&lt;br /&gt;if you want to save your template!</label>
+            <label index="notsaved">Template was not saved!</label>
+            <label index="newtemplateelement">New content element</label>
+            <label index="savetemplate">Save template</label>
+            <label index="saveandclosetemplate">save and close template</label>
+            <label index="closetemplate">Close template</label>
+            <label index="newtemplate">New template</label>
+            <label index="deletetemplateitem">delete this item</label>
+            <label index="deletemessageitem">Are you sure to delete this item?</label>
+            <label index="uploadfilesubmit">Upload File</label>
+            <label index="uploadfiletitle">Load XFT File:</label>
+            <label index="none">None</label>
+            <label index="image">Image</label>
+            <label index="multimedia">Multimedia</label>
+            <label index="file">file</label>
+            <label index="text">Testo</label>
+            <label index="cObject">cObject</label>
+            <label index="selectpalettes">Palette:</label>
+            <label index="type">Render:</label>
+            <label index="xtype">Tipo:</label>
+
+
+
+            <label index="chooseTemplate">Choose a template:</label>
+            <label index="importTemplateTip">Import a saved template</label>
+            <label index="exportTemplateTip">Export template</label>
+
+
+            <label index="deleteelementmessage">Are you sure to delete element?</label>
+            <label index="deleteelementtitle">Delete</label>
+
+            <label index="dialogYes">Yes</label>
+            <label index="dialogNo">No</label>
+            <label index="dialogCancel">Cancel</label>
+            <label index="dialogOK">OK</label>
+
+
+            <label index="typoscriptTitle">Typoscript</label>
+            <label index="HTMLTitle">HTML</label>
+            <label index="descriptionTitle">Description</label>
+            <label index="generalTitle">General</label>
+            <label index="elementTitle">Elements</label>
+            <label index="xftTitle">Name of template</label>
+            <label index="xftEnableGroups">Groups can view this template</label>
+            <label index="xftElementTitle">Elements creation</label>
+            <label index="xftTyposcriptTitle">Typoscript configuration</label>
+            <label index="xftTyposcriptText">Typoscript code for managing element object</label>
+            <label index="xftDescriptionTitle">General description for template</label>
+            <label index="xftDescriptionText">Template description (only for backend user, in list view)</label>
+            <label index="xftHTMLTitle">HTML code</label>
+            <label index="xftHTMLText">Template HTML code</label>
+            <label index="xftNewElementTitle">Add new element</label>
+            <label index="xftSaveDokTitle">Save template</label>
+           <label index="xftShowInWizard">Show in content element wizard</label>
+
+            <label index="emptyTitleEntry">Title couldn't be empty</label>
+            <label index="duplicateTitleEntry">Title is already present in the database</label>
+            <label index="emptyElementEntry">A template with empty element couldn't be saved</label>
+            <label index="emptyElementTitleEntry">Title for element n° %d couldn't be empty</label>
+            <label index="noBlankInElementTitle"><![CDATA[Title: <i>%s</i>, cannot contain blank space]]></label>
+      <label index="dialogErrorTitle">Errors during saving</label>
+
+      <label index="titleHeader">Title</label>
+      <label index="descriptionHeader">Description</label>
+      <label index="crdateHeader">Creation date</label>
+      <label index="tstampHeader">Update date</label>
+      <label index="iconsHeader"></label>
+      <label index="hideColumnTips">Hide template</label>
+      <label index="showColumnTips">Show template</label>
+      <label index="deleteColumnTips">Delete template</label>
+      <label index="editColumnTips">Edit template</label>
+      <label index="newColumnTips">New template</label>
+
+
+      <label index="pi1_title">XflexTemplate</label>
+      <label index="pi1_plus_wiz_description">Full feature content Element for personalization of content</label>
+      <label index="importTemplateTitle">Import system</label>
+    <label index="importTemplateMessage">Select xflextemplate exported file from your computer, then press &quot;Import&quot; button and your template will be inserted</label>
+      <label index="importTemplateFileLabel">Select file to import:</label>
+      <label index="importTemplateSubmit">Import</label>
+    <label index="errorHeader">Error during import operation</label>
+      <label index="corruptedContent">Imported file is corrupted</label>
+      <label index="versionIncorrect">The imported file is not compatible with this version of xflextemplate</label>
+      <label index="initialStringControlFailed">Imported file is corrupted</label>
+      <label index="md5EncodingFailed">Imported file is corrupted</label>
+      <label index="impossibleOpeningTmpFile">Impossible saved temporary file (control write access to system tmp directory)</label>
+           <label index="duplicateTemplateEntry">The template name already exists, the operation will not be completed</label>
+           <label index="importOKDescription">The template was succesfully saved</label>
+           <label index="importOKHeader">Import System</label>
+
+
+    </languageKey>
+        <languageKey index="it" type="array">
+            <label index="title">XFT: eXtensibleFlexibleTemplate - generatore di elementi di template dinamici</label>
+            <label index="titlelist">Titolo</label>
+            <label index="descriptionlist">Descrizione</label>
+            <label index="filelist">File HTML</label>
+            <label index="datelist">Aggiornato il</label>
+            <label index="templatetitle">Titolo:</label>
+            <label index="templatefile">File:</label>
+            <label index="typoscript">Typoscript:</label>
+            <label index="description">Descrizione:</label>
+            <label index="palettes">Palettes:</label>
+            <label index="Permissions">Accessi:</label>
+            <label index="groupChoosen">Gruppi selezionati:</label>
+            <label index="groupList">Gruppi:</label>
+            <label index="deleteButtonList">Cancella il gruppo selezionato</label>
+            <label index="eltitle">Etichetta:</label>
+            <label index="deletemessage">Si  &amp;egrave; sicuri di voler cancellare il template?</label>
+            <label index="namemissing">Mancano alcune etichette</label>
+            <label index="filemissing">Manca il file</label>
+            <label index="titlemissing">Manca il titolo</label>
+            <label index="nameduplication">Alcune etichette sono dupplicate</label>
+            <label index="duplicatename">Nome dupplicato</label>
+            <label index="paletteserror">Errore nella palette,&lt;br /&gt;un campo di palette  &amp;egrave; stato inserito in una palette</label>
+            <label index="singlepaletteerror">questo campo  &amp;egrave; presente in una palette, non puÃ² essere parte di una ulteriore palette</label>
+            <label index="singlenamemissing">campo obbligatorio, per favore riempitelo!</label>
+            <label index="singletitlemissing">campo obbligatorio, per favore riempitelo!</label>
+            <label index="singlefilemissing">campo obbligatorio, per favore riempitelo!</label>
+            <label index="erroradvisor">Sono stati rilevati alcuni errori, per poter salvare il template  &amp;egrave; necessario correggerli!</label>
+            <label index="notsaved">Il template non  &amp;egrave; stato salvato!</label>
+            <label index="newtemplateelement">Nuovo elemento di contenuto</label>
+            <label index="savetemplate">Salva</label>
+            <label index="saveandclosetemplate">Salva e chiudi</label>
+            <label index="closetemplate">Chiudi</label>
+            <label index="newtemplate">Nuovo Template</label>
+            <label index="deletetemplateitem">Cancella questo elemento</label>
+            <label index="deletemessageitem">Si  &amp;egrave; sicuri di voler cancellare l'elemento?</label>
+            <label index="uploadfilesubmit">Carica</label>
+            <label index="uploadfiletitle">Carica il template mediante l'apposito file XFT</label>
+            <label index="none">Nessuno</label>
+            <label index="image">Immagine</label>
+            <label index="multimedia">Multimedia</label>
+            <label index="file">file</label>
+            <label index="text">Testo</label>
+            <label index="cObject">Elemento cObject</label>
+            <label index="selectpalettes">Palette:</label>
+            <label index="type">Render:</label>
+            <label index="xtype">Tipo:</label>
+            <label index="nameLabel">Nome elemento</label>
+            <label index="palettesLabel">Palette</label>
+            <label index="wrapTypeLabel">Wrapping</label>
+            <label index="xftTypeLabel">Tipo</label>
+            <label index="input">Input box</label>
+            <label index="check">Checkbox</label>
+            <label index="radio">Radio Button</label>
+            <label index="select">Select box</label>
+            <label index="group">Immagini/Elementi db</label>
+            <label index="size">Dimensione</label>
+            <label index="link">Aggiungere il wizard per il link</label>
+            <label index="max">Max numero di car.</label>
+            <label index="default">Valore di default</label>
+            <label index="eval">Tipo di dato</label>
+            <label index="is_in">Lista di valori ammissibili</label>
+            <label index="checkbox">Checkbox</label>
+            <label index="upper">Valore massimo</label>
+            <label index="lower">Valore minimo</label>
+            <label index="cols">Colonne</label>
+            <label index="rows">Righe</label>
+            <label index="wrap">Wrap in textarea</label>
+            <label index="defaultExtras">Funzioni extra</label>
+            <label index="internal_type">Tipo di elemento</label>
+            <label index="allowed">estensioni permesse</label>
+            <label index="disallowed">estensioni non permesse</label>
+            <label index="MM">relazioni</label>
+            <label index="max_size">Dimensione massima del file</label>
+            <label index="uploadfolder">cartella</label>
+            <label index="show_thumbs">Mostra thumb</label>
+            <label index="maxitems">numero massimo di elementi</label>
+            <label index="minitems">numero minimo di elementi</label>
+            <label index="autoSizeMax">Dimensionamneto lista</label>
+            <label index="multiple">Molteplicita'</label>
+            <label index="disable_controls">Visualizzazione dell'importazione</label>
+
+
+            <label index="deleteelementmessage">Si è sicuri di voler cancellare l'elemento?</label>
+            <label index="deleteelementtitle">Cancellazione</label>
+            <label index="dialogYes">Sì</label>
+            <label index="dialogNo">No</label>
+            <label index="dialogCancel">Annulla</label>
+            <label index="dialogOK">OK</label>
+
+
+            <label index="typoscriptTitle">Typoscript</label>
+            <label index="HTMLTitle">HTML</label>
+            <label index="descriptionTitle">Descrizione</label>
+            <label index="generalTitle">Generale</label>
+            <label index="elementTitle">Elementi</label>
+            <label index="xftTitle">Titolo del template</label>
+            <label index="xftEnableGroups">Gruppi che possono vedere template</label>
+            <label index="xftElementTitle">Creazione degli elementi</label>
+            <label index="xftTyposcriptTitle">Configurazione del typoscript</label>
+            <label index="xftTyposcriptText">Codice typoscript per gestire la visualizzazione degli elementi del template</label>
+            <label index="xftDescriptionTitle">Descrizione generale del template</label>
+            <label index="xftDescriptionText">Descrizione del template</label>
+            <label index="xftHTMLTitle">Codice HTML</label>
+            <label index="xftHTMLText">Codice HTML del template</label>
+            <label index="xftNewElementTitle">Aggiungi nuovo elemento</label>
+            <label index="xftSaveDokTitle">Salva template</label>
+
+            <label index="emptyTitleEntry">Il campo titolo non può essere vuoto</label>
+            <label index="duplicateTitleEntry">Il campo titolo non può essere già presente</label>
+            <label index="emptyElementEntry">Non si può salvare un template senza elementi</label>
+            <label index="emptyElementTitleEntry">Il titolo dell'elemento n° %d non può essere vuoto</label>
+      <label index="dialogErrorTitle">Errori durante il salvataggio</label>
+
+
+      <label index="titleHeader">Titolo</label>
+      <label index="descriptionHeader">Descrizione</label>
+      <label index="crdateHeader">Data di creazione</label>
+      <label index="tstampHeader">Data di aggiornamento</label>
+      <label index="iconsHeader"></label>
+      <label index="hideColumnTips">Nascondi template</label>
+      <label index="showColumnTips">Mostra template</label>
+      <label index="deleteColumnTips">Elimina template</label>
+      <label index="editColumnTips">Modifica template</label>
+      <label index="newColumnTips">Crea nuovo template</label>
+
+      <label index="pi1_title">XflexTemplate</label>
+      <label index="pi1_plus_wiz_description">Elemento di contenuto personalizzabile</label>
+      <label index="exportTemplateTip">Esporta il template</label>
+
+            <label index="chooseTemplate">Scegliere un template:</label>
+      <label index="importTemplateTitle">Sistema di importazione</label>
+
+      <label index="importTemplateMessage">Selezionare il file precedentemente esportato dal proprio computer, poi premete sul pulsante &quot;Import&quot; e il template sara' caricato.</label>
+      <label index="importTemplateFileLabel">Selezionare il file da importare:</label>
+      <label index="importTemplateSubmit">Importa</label>
+            <label index="importTemplateTip">Importa un template</label>
+
+<label index="errorHeader">Errore durante l'importazione</label>
+      <label index="corruptedContent">Il file importato non è corretto</label>
+      <label index="versionIncorrect">Il file che si cerca di importare non è compatibile con questa versione di xflextemplate</label>
+      <label index="initialStringControlFailed">Il file importato non è corretto</label>
+      <label index="md5EncodingFailed">Il file importato nonè corretto</label>
+      <label index="impossibleOpeningTmpFile">Impossibile salvare il file temporaneo (controllare gli accessi in scrittura alla cartella temporanea del sistema)</label>
+      <label index="duplicateTemplateEntry">Il nome del template esiste già, impossibile completare l'importazione</label>
+           <label index="importOKDescription">Il template è stato importato correttamente</label>
+           <label index="importOKHeader">Sistema di importazione</label>
+
+
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="title" type="integer">220952909</label>
+            <label index="titlelist" type="integer">192455458</label>
+            <label index="descriptionlist" type="integer">190479069</label>
+            <label index="filelist" type="integer">223301784</label>
+            <label index="datelist" type="integer">267428791</label>
+            <label index="templatetitle" type="integer">85903807</label>
+            <label index="templatefile" type="integer">182590850</label>
+            <label index="typoscript" type="integer">112464953</label>
+            <label index="description" type="integer">218120871</label>
+            <label index="palettes" type="integer">134388531</label>
+            <label index="Permissions" type="integer">115822812</label>
+            <label index="groupChoosen" type="integer">81857212</label>
+            <label index="groupList" type="integer">142097351</label>
+            <label index="deleteButtonList" type="integer">2296195</label>
+            <label index="eltitle" type="integer">81871034</label>
+            <label index="deletemessage" type="integer">89342731</label>
+            <label index="namemissing" type="integer">179092325</label>
+            <label index="filemissing" type="integer">55444909</label>
+            <label index="titlemissing" type="integer">123225514</label>
+            <label index="nameduplication" type="integer">153887771</label>
+            <label index="duplicatename" type="integer">255379665</label>
+            <label index="paletteserror" type="integer">260056027</label>
+            <label index="singlepaletteerror" type="integer">129690396</label>
+            <label index="singlenamemissing" type="integer">20648327</label>
+            <label index="singletitlemissing" type="integer">20648327</label>
+            <label index="singlefilemissing" type="integer">20648327</label>
+            <label index="erroradvisor" type="integer">47034355</label>
+            <label index="notsaved" type="integer">202985733</label>
+            <label index="newtemplateelement" type="integer">44759206</label>
+            <label index="savetemplate" type="integer">107558073</label>
+            <label index="saveandclosetemplate" type="integer">68540069</label>
+            <label index="closetemplate" type="integer">88934862</label>
+            <label index="newtemplate" type="integer">230410830</label>
+            <label index="deletetemplateitem" type="integer">21952555</label>
+            <label index="deletemessageitem" type="integer">125865339</label>
+            <label index="uploadfilesubmit" type="integer">263945585</label>
+            <label index="uploadfiletitle" type="integer">134955004</label>
+            <label index="none" type="integer">112064895</label>
+            <label index="image" type="integer">199571973</label>
+            <label index="multimedia" type="integer">49638223</label>
+            <label index="file" type="integer">147316114</label>
+            <label index="text" type="integer">100886389</label>
+            <label index="cObject" type="integer">48850870</label>
+            <label index="selectpalettes" type="integer">199214374</label>
+            <label index="type" type="integer">32272526</label>
+            <label index="xtype" type="integer">193105663</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="title" type="integer">220952909</label>
+            <label index="titlelist" type="integer">192455458</label>
+            <label index="descriptionlist" type="integer">190479069</label>
+            <label index="filelist" type="integer">223301784</label>
+            <label index="datelist" type="integer">267428791</label>
+            <label index="templatetitle" type="integer">85903807</label>
+            <label index="templatefile" type="integer">182590850</label>
+            <label index="typoscript" type="integer">112464953</label>
+            <label index="description" type="integer">218120871</label>
+            <label index="palettes" type="integer">134388531</label>
+            <label index="Permissions" type="integer">115822812</label>
+            <label index="groupChoosen" type="integer">81857212</label>
+            <label index="groupList" type="integer">142097351</label>
+            <label index="deleteButtonList" type="integer">2296195</label>
+            <label index="eltitle" type="integer">81871034</label>
+            <label index="deletemessage" type="integer">89342731</label>
+            <label index="namemissing" type="integer">179092325</label>
+            <label index="filemissing" type="integer">55444909</label>
+            <label index="titlemissing" type="integer">123225514</label>
+            <label index="nameduplication" type="integer">153887771</label>
+            <label index="duplicatename" type="integer">255379665</label>
+            <label index="paletteserror" type="integer">260056027</label>
+            <label index="singlepaletteerror" type="integer">129690396</label>
+            <label index="singlenamemissing" type="integer">20648327</label>
+            <label index="singletitlemissing" type="integer">20648327</label>
+            <label index="singlefilemissing" type="integer">20648327</label>
+            <label index="erroradvisor" type="integer">47034355</label>
+            <label index="notsaved" type="integer">202985733</label>
+            <label index="newtemplateelement" type="integer">44759206</label>
+            <label index="savetemplate" type="integer">107558073</label>
+            <label index="saveandclosetemplate" type="integer">68540069</label>
+            <label index="closetemplate" type="integer">88934862</label>
+            <label index="newtemplate" type="integer">230410830</label>
+            <label index="deletetemplateitem" type="integer">21952555</label>
+            <label index="deletemessageitem" type="integer">125865339</label>
+            <label index="uploadfilesubmit" type="integer">263945585</label>
+            <label index="uploadfiletitle" type="integer">134955004</label>
+            <label index="none" type="integer">112064895</label>
+            <label index="image" type="integer">199571973</label>
+            <label index="multimedia" type="integer">49638223</label>
+            <label index="file" type="integer">147316114</label>
+            <label index="text" type="integer">100886389</label>
+            <label index="cObject" type="integer">48850870</label>
+            <label index="selectpalettes" type="integer">199214374</label>
+            <label index="type" type="integer">32272526</label>
+            <label index="xtype" type="integer">193105663</label>
+            <label index="nameLabel" type="integer">222419149</label>
+            <label index="palettesLabel" type="integer">222419149</label>
+            <label index="wrapTypeLabel" type="integer">222419149</label>
+            <label index="xftTypeLabel" type="integer">222419149</label>
+            <label index="input" type="integer">222419149</label>
+            <label index="check" type="integer">222419149</label>
+            <label index="radio" type="integer">222419149</label>
+            <label index="select" type="integer">222419149</label>
+            <label index="group" type="integer">222419149</label>
+            <label index="size" type="integer">222419149</label>
+            <label index="max" type="integer">222419149</label>
+            <label index="default" type="integer">222419149</label>
+            <label index="eval" type="integer">222419149</label>
+            <label index="is_in" type="integer">222419149</label>
+            <label index="checkbox" type="integer">222419149</label>
+            <label index="upper" type="integer">222419149</label>
+            <label index="lower" type="integer">222419149</label>
+            <label index="cols" type="integer">222419149</label>
+            <label index="rows" type="integer">222419149</label>
+            <label index="wrap" type="integer">222419149</label>
+            <label index="defaultExtras" type="integer">222419149</label>
+            <label index="internal_type" type="integer">222419149</label>
+            <label index="allowed" type="integer">222419149</label>
+            <label index="disallowed" type="integer">222419149</label>
+            <label index="MM" type="integer">222419149</label>
+            <label index="max_size" type="integer">222419149</label>
+            <label index="uploadfolder" type="integer">222419149</label>
+            <label index="show_thumbs" type="integer">222419149</label>
+            <label index="maxitems" type="integer">222419149</label>
+            <label index="minitems" type="integer">222419149</label>
+            <label index="autoSizeMax" type="integer">222419149</label>
+            <label index="multiple" type="integer">222419149</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>

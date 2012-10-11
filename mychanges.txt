@@ -1,0 +1,49 @@
+in ext_tables.sql, line 28, added:
+	showinwizard tinyint(4) unsigned DEFAULT '0' NOT NULL,
+
+in hooks/class.tx_xflextemplate_pi1_newContentElementWizardItemsHook.php, line 25, after $wizardItems=array() added:
+
+		$templateItems=array();
+		// Add templates directly to the content element wizard
+		$res=$GLOBALS['TYPO3_DB']->exec_SELECTquery('title,description','tx_xflextemplate_template','showinwizard=1 AND deleted=0 AND hidden=0');
+		$counter=0;
+		while ($dbrow=$GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)){
+			$titel=$dbrow['title'];
+			$counter++;
+			$templateItems[]= array(
+				'icon' => t3lib_extMgm::extRelPath("xflextemplate") . 'pi1/xft_wiz.gif',
+				'title' => $dbrow['title'],
+				'description' => $dbrow['description'],
+				'params' => '&defVals[tt_content][CType]=xflextemplate_pi1&defVals[tt_content][xtemplate]='.$titel,
+				'tt_content_defValues' =>
+				array (
+				  'CType' => 'xflextemplate_pi1',
+				  'xtemplate' => $titel
+				)
+			);
+		}
+
+
+and near the end of file, after $wizardItems['common_xflextemplate_pi1'] = $xflextemplateWizardArray;
+
+
+added:
+
+	for($a=0;$a<$counter;$a++){
+
+		$wizardItems['xflextemplate_'.$a]=$templateItems[$a];
+	}
+
+
+
+in library/class.xftObject.php, after line 142 $savedData['title'] = $dataArray['xftMain']['xftTitle'];
+added:
+$savedData['showinwizard'] = $dataArray['xftMain']['xftShowinwizard'];
+
+also after line 203
+and after line 270 $xftArray['xftMain']['uid'] = $row['uid'];
+added:
+$xftArray['xftMain']['xftShowinwizard'] = $row['showinwizard'];
+
+in mod1/index.php line 513 before last closing </td></tr> added: 
+<div style="margin-top:10px"><input style="margin-right:5px" type="checkbox" id="xftShowinwizard" name="xftMain[xftShowinwizard]" value="1" ' . ($this->mainArray['xftShowinwizard']==1?'checked="checked"':'') . '" />Show in content element wizard</div>

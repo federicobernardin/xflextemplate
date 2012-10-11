@@ -1,0 +1,469 @@
+
+.column {
+float:left;
+padding-bottom:100px;
+width:100%;
+}
+.portlet {
+margin:0 1em 1em;
+border: 2px solid #a2aab8;
+
+}
+.portlet-header {
+/*margin:0.3em;
+padding-bottom:4px;
+padding-left:0.2em;*/
+background:  #6E6E6E repeat-x;
+color: #ffffff;
+min-height: 16px;
+padding: 5px;
+cursor: move;
+}
+
+.portlet-header .title{
+font-weight: bold;
+}
+
+.portlet-header .ui-icon {
+float:left;
+background:  -31px 0px url(images/plusminus.png);
+width: 16px;
+height: 16px;
+cursor: pointer;
+}
+.portlet-content {
+  background: #ECECEC;
+}
+
+.portlet-content .subElementTable td.xftStandardColumn{
+  width: 50px;
+}
+
+.portlet-content label{
+  display: block;
+  padding-bottom: 5px;
+}
+
+.portlet-content td{
+ /* padding: 10px 0;*/
+}
+
+.ui-sortable-placeholder {
+border:1px dotted black;
+height:50px !important;
+visibility:visible !important;
+}
+.ui-sortable-placeholder * {
+visibility:hidden;
+}
+.portlet-header .ui-icon-plusthick{
+background-position: -0px 0px;
+}
+
+.ui-icon-delete,.xft-closeicon{
+float: right;
+width: 16px;
+height: 16px;
+}
+
+.portlet-header .ui-icon-minusthick{
+background-position:  -16px 0px;
+}
+
+/*.ui-sortable-helper{
+  border: 2px solid red;
+  width: 100%;
+}*/
+
+.subelement input {
+  display: block;
+}
+
+
+
+
+/*.subelement label{
+  float:				left;
+  width:				150px;
+}*/
+
+.subelement{
+  clear: both;
+  margin-top: 10px;
+}
+
+.subelement dd{
+  float: none;
+}
+
+.subelement input,.subelement select{
+  display:			block;
+  margin: 5px 0;
+}
+
+dl.xft-main-element{
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+  height:20px;
+}
+
+
+.xft-main-element dd{
+  float: left;
+  margin: 0 30px 0 5px ;
+}
+.xft-main-element dt{
+  float: left;
+}
+
+#xftEnableGroups{
+  width: 100px;
+  height: 100px;
+}
+
+.tab-inner-container dl dd{
+  margin-bottom: 5px;
+}
+
+.tab-inner-container dl dd label{
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+
+.tab-inner-container label, table.typo3-dblist tr td label{
+    display: block;
+  padding-bottom: 10px;
+}
+table.typo3-dblist tr td.xftHelpColumn{
+  padding: 0;
+}
+
+
+
+.portlet-header .ui-icon-delete{
+  cursor: pointer;
+}
+
+.ui-sortable-placeholder{
+  border: 1px dotted black;
+  height: 50px !important;
+  background:red;
+}
+
+
+
+
+
+/*TABS*/
+.xft-TabHeader {
+background:  #6E6E6E  repeat-x;
+color: #ffffff;
+padding:5px;
+}
+
+div.ui-tabs-panel{
+  margin:0;
+  padding:0;
+
+}
+
+.fullBordered{
+  border-right: 1px solid #a2aab8;
+  border-bottom: 1px solid #a2aab8;
+  border-left: 1px solid #a2aab8;
+  clear:both;
+}
+
+.xft-icon{
+  padding: 2px 15px;
+  display: block;
+  float: left;
+}
+
+.xft-tabs-header{
+  display: block;
+  font-weight: bold;
+  padding: 2px 15px;
+}
+
+.pointer-icon{
+  cursor: pointer;
+}
+
+.tab-inner-container{
+  /*margin: 10px;*/
+  /*border: 1px solid #6E6E6E;*/
+  background: #ECECEC;
+  /*padding: 10px;*/
+}
+
+.xftRowDivider{
+  color: #B3B3B3;
+  height: 1px;
+  background: #B3B3B3;
+  border:0;
+}
+
+
+td.xftHelpColumn{
+  width: 31px;
+}
+td.xftStandardColumn,table.typo3-dblist tr td.xftStandardColumn{
+  padding: 10px 0;
+}
+
+
+#xftTyposcript{
+  width: 100%;
+}
+
+.labelTextarea{
+  display: block;
+}
+
+.tab-inner-container iframe{
+  border: 1px solid black;
+}
+
+
+.column{
+  margin:10px 5px;
+}
+
+.xftDescriptionClass{
+  width: 660px;
+  height: 350px;
+  border: 1px solid #a2aab8;
+}
+
+.xftEditorContainer{
+  border: 1px solid #6E6E6E;
+  background-color: #fff;
+  width: 650px;
+}
+
+input.xftSaveDok, input.xftSaveDok:hover{
+  background: none;
+  border: none;
+}
+
+#dialogError p .dialogContent{
+  display: block;
+  border: 1px solid red;
+}
+
+
+
+/*dialog*/
+.ui-dialog {
+  /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1.1em;
+  background: #ffffff url(images/ffffff_40x100_textures_01_flat_75.png) 0 0 repeat-x;
+  color: #222222;
+  border: 4px solid #8b919b;
+  position: relative;
+}
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  z-index: 99999;
+}
+.ui-resizable .ui-resizable-handle {
+  display: block;
+}
+body .ui-resizable-disabled .ui-resizable-handle { display: none; } /* use 'body' to make it more specific (css order) */
+body .ui-resizable-autohide .ui-resizable-handle { display: none; } /* use 'body' to make it more specific (css order) */
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0px;
+}
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0px;
+}
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0px;
+  height: 100%;
+}
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0px;
+  height: 100%;
+}
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 13px;
+  height: 13px;
+  right: 0px;
+  bottom: 0px;
+  background: url(images/222222_11x11_icon_resize_se.gif) no-repeat 0 0;
+}
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: 0px;
+  bottom: 0px;
+}
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: 0px;
+  top: 0px;
+}
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: 0px;
+  top: 0px;
+}
+.ui-dialog-titlebar {
+  /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+  padding: .5em 1.5em .5em 1em;
+  color: #ffffff;
+  background: #a2aab8 url(images/e6e6e6_40x100_textures_02_glass_75.png) 0 50% repeat-x;
+  border-bottom: 1px solid #a2aab8;
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+}
+.ui-dialog-title {}
+.ui-dialog-titlebar-close {
+  /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+  background: url(images/888888_11x11_icon_close.gif) 0 0 no-repeat;
+  position: absolute;
+  right: 8px;
+  top: .7em;
+  width: 11px;
+  height: 11px;
+  z-index: 100;
+}
+.ui-dialog-titlebar-close-hover, .ui-dialog-titlebar-close:hover {
+  background: url(images/454545_11x11_icon_close.gif) 0 0 no-repeat;
+}
+.ui-dialog-titlebar-close:active {
+  background: url(images/454545_11x11_icon_close.gif) 0 0 no-repeat;
+}
+.ui-dialog-titlebar-close span {
+  display: none;
+}
+.ui-dialog-content {
+  /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+  color: #222222;
+  padding: 1.5em 1.7em;
+}
+.ui-dialog-buttonpane {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid #aaaaaa;
+  background: #ffffff;
+}
+.ui-dialog-buttonpane button {
+  margin: .5em 0 .5em 8px;
+  color: #555555;
+  background: #e6e6e6 url(images/e6e6e6_40x100_textures_02_glass_75.png) 0 50% repeat-x;
+  font-size: 1em;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  line-height: 1.4em;
+}
+.ui-dialog-buttonpane button:hover {
+  color: #212121;
+  background: #dadada url(images/dadada_40x100_textures_02_glass_75.png) 0 50% repeat-x;
+  border: 1px solid #999999;
+}
+.ui-dialog-buttonpane button:active {
+  color: #212121;
+  background: #ffffff url(images/ffffff_40x100_textures_02_glass_65.png) 0 50% repeat-x;
+  border: 1px solid #aaaaaa;
+}
+/* This file skins dialog */
+.ui-dialog.ui-draggable .ui-dialog-titlebar,
+.ui-dialog.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+
+.clear{
+  clear: both;
+}
+
+#dialogContainer{
+  display: none;
+}
+
+
+.CodeMirror-line-numbers {
+        width: 2.2em;
+        color: #aaa;
+        background-color: #eee;
+        text-align: right;
+        padding-right: .3em;
+        font-size: 10pt;
+        font-family: monospace;
+        padding-top: .4em;
+      }
+
+
+
+/*TABLE LIST*/
+/*.xftTableList{
+  border: 2px solid #a2aab8;
+  border-collapse: collapse;
+}
+
+.xftTableList thead{
+  background: #a2aab8;
+  color: #ffffff;
+  font-weight: bold;
+}
+.xftTableList td, .xftTableList th{
+  border:1px solid #a2aab8;
+  padding:0.2em 0.5em;
+  text-align: center;
+}*/
+
+body#ext-xflextemplate-mod1-index-php .em-listbg2{
+  background-color:#E6E6E6;
+}
+
+.xft-helpTitle{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ul.xft-error{
+  color: red;
+  font-weight: normal;
+  font-size: 10px;
+  padding: 0;
+}
+
+ul.xft-error li{
+  margin:5px;
+}
+
+.xft-helpDescription,ul.xft-error{
+  margin: 0 0 8px;
+}
+

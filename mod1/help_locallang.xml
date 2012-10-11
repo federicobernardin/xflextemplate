@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>pippo</description>
+        <type></type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="helpCode_1">This field is used to define the template name, it will be visible in template list, inside the backend field template. It's very important to use a unique name for template.</label>
+            <label index="helpCode_2">In this field you can choose what groups can access this template. If you leave empty, all backend groups can access this template.</label>
+      <label index="helpCode_3">In this field you can insert a description to explain how does template work. This text is visible in template list of XFlexTemplate module, not in the template page item.</label>
+            <label index="helpCode_4"><![CDATA[In this field you can insert the typoscript to use in your template.<br />Each template Element can be setted in this field, you can define back-end localized label for each fields too.<br />
+      Example: Suppose you have just created an element named <i>title</i> and you want define the english label <i>block title</i> and italian translation as <i>Titolo del template</i> you have to write:<br/>
+      language.title.beLabel.en = block title<br/>
+      language.title.beLabel.it = Titolo del template]]></label>
+    <label index="helpCode_5"><![CDATA[In this field you can insert the HTML code to use in your template.<br />Each field defines in the next section could be a placeholder to insert it into HTML code.<br /> Each placeholder is constituited by three # follwed by name of element in upper case and then three #.]]></label>
+        <label index="helpCode_20">This field contains code of field in TCE Forms. This field have to be alphanumeric, without space and it mustn't a name of tt_content table.</label>
+        <label index="helpCode_21"><![CDATA[This select contains the config type data of the TCE Form field.<br />If you change this value also the fields below change.<br /><br /><b>input</b>: this is the standard input field
+    <br /><b>Text</b>: this is the standard textarea field, you can use RTE leaving empty the defaultExtras. If you write anything in the defaultExtras field, RTE will not be shown.]]></label>
+        <label index="helpCode_22"><![CDATA[This field defines the field in which these one will be shown. Palettes is the secondary fields and these type of fields are visible is you checked
+    <i>show secondary options</i> (for a better understanding of palettes see API Core documentations of TYPO3).]]></label>
+        <label index="helpCode_23"><![CDATA[Render Type is the default method to show this element. Each field will be rendered by tslib_content method, so this field will be rendered with IMAGE or TEXT or MULTIMEDIA (the render type you have choosen) unless you have changed the type by typoscript template form.]]></label>
+
+        <label index="helpCode_30">Maximum number of characters the user will be able to insert into the field.</label>
+        <label index="helpCode_31">The size attribute of the input element (the length of input box in characters).</label>
+        <label index="helpCode_32">Default value for the input box, if it's empty the value will be this.</label>
+        <label index="helpCode_33">Separated comma values of allowed words to be inserted in this input box.</label>
+        <label index="helpCode_34"><![CDATA[Configuration of field evaluation.<br />The eval-functions will be executed in the list-order.<br />The possible values are:<br />required, trim, date, datetime, time, timesec, year, int, upper, lower, alpha, num, alphanum, alphanum_x, nospace, md5, is_in, password, double2, unique, uniqueInPid.<br />For a specific description of each value and how does it work,  you can see TYPO3 Core API.]]></label>
+        <label index="helpCode_35">If defined (even empty), a checkbox is placed before the input field. If a value other than the value of 'checkbox' (this value) appears in the input-field the checkbox is checked.</label>
+        <label index="helpCode_36">The max value indicates the upper limit range. If value written by user is upper than limit, typo3 override value with upper limit.</label>
+        <label index="helpCode_37">The min value indicates the lower limit range. If value written by user is lower than limit, typo3 override value with lower limit.</label>
+
+
+        <label index="helpCode_40">The number of columns of textarea.</label>
+        <label index="helpCode_41">The number of rows of textarea.</label>
+        <label index="helpCode_42">Default value for the textarea, if it's empty the value will be this.</label>
+        <label index="helpCode_43">Determines the wrapping of the textarea field (for a better understanding of this field see API Core documentations of TYPO3).</label>
+        <label index="helpCode_44">This field contains the defaultExtras field defined in TYPO3 Core API. For textarea the default value contains is: richtext[]:rte_transform[flag=rte_enabled|mode=ts].</label>
+
+
+        <label index="helpCode_50">This field contains the elements of check box, each line is splitted by return and each line is divided in label,field by comma (Example: suppose to create two radio buttons, one with label check1 and value 1 and the second one with label check2 and value 2. You will write: check1,1[Enter]check2,2)</label>
+        <label index="helpCode_51">The number of columns the checkbox array are shown in</label>
+        <label index="helpCode_52">Default value for the checkbox, this value is binary and each bit corrisponds to one checkbox, so if you have 2 checkbox, 1 only firstone is checked, 3 both chewckboxes will be checked.</label>
+        <label index="helpCode_53">PHP function which is called to fill / manipulate the array with elements(for a better understanding of this field see API Core documentations of TYPO3).</label>
+
+
+        <label index="helpCode_60">This field contains the elements of radio box, each line is splitted by return and each line is divided in label,field by comma (Example: suppose to create two radio buttons, one with label radio1 and value 1 and the second one with label radio2 and value 2. You will write: radio1,1[Enter]radio2,2)</label>
+        <label index="helpCode_61">Default value for the radio, the specified radio will be selected.</label>
+        <label index="helpCode_62">PHP function which is called to fill / manipulate the array with elements(for a better understanding of this field see API Core documentations of TYPO3).</label>
+
+
+        <label index="helpCode_70">This field specifies where data will be fetched. If you choose file, the data will be a file in the filesystem, otherwise if you choose database, data will be one or more row from TCA tables.</label>
+        <label index="helpCode_71">This field contains a comma separated values of file extension (if you have choosen file from type of element) or TCA table list (if you have choose database from type of element) allowed.</label>
+        <label index="helpCode_72">This field contains a comma separated values of file extension (if you have choosen file from type of element) or TCA table list (if you have choose database from type of element) not allowed.</label>
+        <label index="helpCode_73">See API Core documentations of TYPO3</label>
+        <label index="helpCode_74">Maximum size of file.</label>
+        <label index="helpCode_75">If you check, thumbnail of file will be visible</label>
+        <label index="helpCode_76">Maximum number of file you can select.</label>
+        <label index="helpCode_77">Minimum number of file you can select (if you leave empty, user can choose 0 file or table rows).</label>
+        <label index="helpCode_78">Height of the selectorbox in TCEforms</label>
+        <label index="helpCode_79">It is the maximum height the selector can ever reach.</label>
+        <label index="helpCode_80">You can choose multiple value for the same item.</label>
+            </languageKey>
+    </data>
+</T3locallang>

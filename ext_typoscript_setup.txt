@@ -1,0 +1,15 @@
+plugin.tx_xflextemplate_pi1{
+    installed = 1
+    text{
+        field = ###XFTELEMENTFIELD###
+    }
+    image{
+        file.import.field = ###XFTELEMENTFIELD###
+        file.import = uploads/pics/
+    }
+    multimedia {
+        file.field = ###XFTELEMENTFIELD###
+        file.wrap = uploads/pics/
+        file.listNum = 0
+    }
+}
